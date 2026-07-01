@@ -1,16 +1,16 @@
 # NetSignal - macOS 网络状态监测工具
 
 <p align="center">
-  <img src="screenshots/menu.png" alt="NetSignal 菜单" width="360">
+  <img src="screenshots/菜单栏.png" alt="NetSignal 菜单" width="360">
 </p>
 
 NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的访问速度，用直观的信号格图标反映当前网络状态。
 
 <p align="center">
-  <img src="screenshots/icon-gray.png" alt="灰色信号图标" height="50">
-  <img src="screenshots/icon-green.png" alt="绿色信号图标" height="50">
+  <img src="screenshots/菜单栏-图标-非彩色.png" alt="非彩色图标" height="50">
+  <img src="screenshots/菜单栏-图标-彩色.png" alt="彩色图标" height="50">
 </p>
-<p align="center"><small>灰色 = 网络较差 · 绿色 = 网络良好</small></p>
+<p align="center"><small>非彩色 = 网络较差 · 彩色 = 网络良好</small></p>
 
 ## 特性
 
@@ -34,8 +34,8 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
 |---------|------|------|
 | < 200ms | 极快 | 🟢 绿色 |
 | 200-500ms | 良好 | 🟢 绿色 |
-| 500-1500ms | 一般 | 🟠 橙色 |
-| > 1500ms | 较慢 |  红色 |
+| 500-1500ms | 一般 |  橙色 |
+| > 1500ms | 较慢 | 🔴 红色 |
 | 超时 | 超时 | ⚪ 灰色 |
 
 ## 信号格规则
