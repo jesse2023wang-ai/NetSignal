@@ -10,7 +10,7 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
   <img src="screenshots/菜单栏-图标-非彩色.png" alt="非彩色图标" height="50">
   <img src="screenshots/菜单栏-图标-彩色.png" alt="彩色图标" height="50">
 </p>
-<p align="center"><small>非彩色 = 网络较差 · 彩色 = 网络良好</small></p>
+<p align="center"><small>非彩色 / 彩色</small></p>
 
 ## 特性
 
