@@ -1,23 +1,19 @@
 # Build artifacts
 .build/
 *.dSYM/
-*.dmgs
+*.dmg
 *.zip
 
 # Xcode
 .DS_Store
-*.swp
-*.DS_Store
 *.xcworkspace
 *.xcodeproj
 *.pbxuser
 *.mode1v3
 *.mode2v3
 *.perspectivev3
-*.moved-aside
 *.xcuserdata
 *.xccheckout
-*.moved-aside
 *.playground
 *.playgroundchapter
 *.playgroundbook
@@ -25,7 +21,6 @@
 
 # macOS
 ._*
-.DS_Store
 *.localized
 
 # Swift
@@ -41,13 +36,11 @@ __pycache__/
 *.pyd
 .Python
 .env
-.venv
-venv/
+.venv/
 lib/
 lib64/
 include/
 *.so
-.Python
 .pytest_cache/
 .coverage
 .coverage.*
@@ -56,6 +49,8 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
+
+# Git
 .git/objects/
 .git/subtree-cache/
 .git/index.lock

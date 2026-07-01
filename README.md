@@ -1,6 +1,16 @@
 # NetSignal - macOS 网络状态监测工具
 
+<p align="center">
+  <img src="screenshots/menu.png" alt="NetSignal 菜单" width="360">
+</p>
+
 NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的访问速度，用直观的信号格图标反映当前网络状态。
+
+<p align="center">
+  <img src="screenshots/icon-gray.png" alt="灰色信号图标" height="50">
+  <img src="screenshots/icon-green.png" alt="绿色信号图标" height="50">
+</p>
+<p align="center"><small>灰色 = 网络较差 · 绿色 = 网络良好</small></p>
 
 ## 特性
 
@@ -13,15 +23,20 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
 - **菜单倒计时**：菜单打开时显示"下一次刷新 X秒"倒计时
 - **免费开源**：所有功能免费使用，无需付费
 
+## 下载安装
+
+- **GitHub Releases**：[v1.0.0 下载](https://github.com/jesse2023wang-ai/NetSignal/releases/tag/v1.0.0)（NetSignal-1.0.0.dmg）
+- 下载后打开 `.dmg`，将 NetSignal 拖入 Applications 文件夹即可
+
 ## 测速标准
 
 | 响应时间 | 状态 | 颜色 |
 |---------|------|------|
-| < 200ms | 极快 | 绿色 |
-| 200-500ms | 良好 | 绿色 |
-| 500-1500ms | 一般 | 橙色 |
-| > 1500ms | 较慢 | 红色 |
-| 超时 | 超时 | 灰色 |
+| < 200ms | 极快 | 🟢 绿色 |
+| 200-500ms | 良好 | 🟢 绿色 |
+| 500-1500ms | 一般 | 🟠 橙色 |
+| > 1500ms | 较慢 |  红色 |
+| 超时 | 超时 | ⚪ 灰色 |
 
 ## 信号格规则
 
@@ -57,11 +72,11 @@ swift run
 | 功能 | Ethernet Status | NetSignal |
 |------|----------------|-----------|
 | 菜单栏显示 | 支持 | 支持 |
-| 信号格图标 | 不支持 | 支持 |
-| 国内外网站测速 | 不支持 | 支持 |
-| 自定义网站 | 不支持 | 支持 |
-| 高级功能付费 | 是 | 否（全部免费） |
-| 菜单倒计时 | 不支持 | 支持 |
+| 信号格图标 | 不支持 | ✅ 支持 |
+| 国内外网站测速 | 不支持 | ✅ 支持 |
+| 自定义网站 | 不支持 | ✅ 支持 |
+| 高级功能付费 | 是 | ✅ 否（全部免费） |
+| 菜单倒计时 | 不支持 | ✅ 支持 |
 
 ## 系统要求
 
