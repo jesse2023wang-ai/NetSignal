@@ -12,6 +12,10 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
 </p>
 <p align="center"><small>非彩色 / 彩色</small></p>
 
+<p align="center">
+  <img src="screenshots/设置页-自定义网址.png" alt="设置页-自定义网址" width="360">
+</p>
+
 ## 特性
 
 - **信号格显示**：类似手机信号图标，1-4 格直观展示网络好坏
