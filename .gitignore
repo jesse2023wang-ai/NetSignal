@@ -1,0 +1,61 @@
+# Build artifacts
+.build/
+*.dSYM/
+*.dmgs
+*.zip
+
+# Xcode
+.DS_Store
+*.swp
+*.DS_Store
+*.xcworkspace
+*.xcodeproj
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.xcuserdata
+*.xccheckout
+*.moved-aside
+*.playground
+*.playgroundchapter
+*.playgroundbook
+*.playgroundbookchapter
+
+# macOS
+._*
+.DS_Store
+*.localized
+
+# Swift
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.swiftinterface
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+venv/
+lib/
+lib64/
+include/
+*.so
+.Python
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/objects/
+.git/subtree-cache/
+.git/index.lock
