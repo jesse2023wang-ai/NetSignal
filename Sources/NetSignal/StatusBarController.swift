@@ -315,7 +315,7 @@ class StatusBarController: NSObject, NetworkMonitorDelegate, NSMenuDelegate {
     @objc private func aboutClicked() {
         let alert = NSAlert()
         alert.messageText = "NetSignal"
-        alert.informativeText = "版本 1.0.0\n\n网络状态监测工具\n通过监测国内外主要网站访问速度，直观反映当前网络状态。"
+        alert.informativeText = "版本 1.0.1\n\n网络状态监测工具\n通过监测国内外主要网站访问速度，直观反映当前网络状态。"
         alert.alertStyle = .informational
         alert.icon = appIcon()
         alert.addButton(withTitle: "确定")

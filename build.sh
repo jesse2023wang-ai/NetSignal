@@ -4,7 +4,7 @@ set -e
 echo "Building NetSignal..."
 swift build --disable-sandbox -c release
 
-VERSION="1.0.0"
+VERSION="1.0.1"
 STAGING=$(mktemp -d)
 
 echo "Creating app bundle..."
