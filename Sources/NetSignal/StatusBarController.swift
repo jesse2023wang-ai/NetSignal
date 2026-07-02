@@ -1,6 +1,6 @@
 import Cocoa
 
-class StatusBarController: NSObject, NetworkMonitorDelegate {
+class StatusBarController: NSObject, NetworkMonitorDelegate, NSMenuDelegate {
     private var statusItem: NSStatusItem
     private var timer: Timer?
     private var countdownTimer: Timer?
@@ -199,6 +199,7 @@ class StatusBarController: NSObject, NetworkMonitorDelegate {
         menu.addItem(quitItem)
 
         statusItem.menu = menu
+        menu.delegate = self
     }
 
     private func updateMenuItems() {
@@ -338,9 +339,7 @@ class StatusBarController: NSObject, NetworkMonitorDelegate {
     }
 }
 
-// MARK: - NSMenuDelegate (倒计时)
-
-extension StatusBarController: NSMenuDelegate {
+extension StatusBarController {
     func menuWillOpen(_ menu: NSMenu) {
         startMenuCountdown()
     }
@@ -351,7 +350,7 @@ extension StatusBarController: NSMenuDelegate {
 
     private func startMenuCountdown() {
         stopMenuCountdown()
-        updateCountdownItem() // 立即更新一次
+        updateCountdownItem()
         countdownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             self?.updateCountdownItem()
         }
@@ -371,12 +370,10 @@ extension StatusBarController: NSMenuDelegate {
             return
         }
         item.isHidden = false
-        
+
         let interval = prefs.refreshInterval
         let elapsed = Date().timeIntervalSince(lastTestTime)
         let remaining = max(0, interval - elapsed)
-        
-        // 确保至少显示1秒（避免显示0秒）
         let seconds = max(1, Int(ceil(remaining)))
         let text = "下一次刷新  \(seconds)秒"
         item.attributedTitle = NSAttributedString(

@@ -67,8 +67,8 @@ cp Resources/AppIcon.png "NetSignal.app/Contents/Resources/"
 cp -R NetSignal.app "$STAGING/"
 ln -s /Applications "$STAGING/Applications"
 
-echo "Creating DMG: NetSignal-${VERSION}.dmg..."
-hdiutil create -volname "NetSignal ${VERSION}" -srcfolder "$STAGING" -ov -format UDZO "NetSignal-${VERSION}.dmg"
+echo "Creating DMG: NetSignal.dmg..."
+hdiutil create -volname "NetSignal" -srcfolder "$STAGING" -ov -format UDZO "NetSignal.dmg"
 rm -rf "$STAGING"
 
 # Clean up intermediate artifacts
@@ -76,4 +76,4 @@ rm -rf NetSignal.app
 
 echo "Build complete!"
 echo ""
-echo "DMG available at: $(pwd)/NetSignal-${VERSION}.dmg"
+echo "DMG available at: $(pwd)/NetSignal.dmg"

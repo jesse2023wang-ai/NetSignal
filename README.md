@@ -29,7 +29,7 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
 
 ## 下载安装
 
-- **GitHub Releases**：[v1.0.0 下载](https://github.com/jesse2023wang-ai/NetSignal/releases/tag/v1.0.0)（NetSignal-1.0.0.dmg）
+- **GitHub Releases**：[v1.0.1 下载](https://github.com/jesse2023wang-ai/NetSignal/releases/tag/v1.0.1)（NetSignal-1.0.1.dmg）
 - 下载后打开 `.dmg`，将 NetSignal 拖入 Applications 文件夹即可
 
 ## ⚠️ 首次运行设置
