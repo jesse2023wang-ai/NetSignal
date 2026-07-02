@@ -32,6 +32,49 @@ NetSignal 是一款 macOS 菜单栏应用，通过监测国内外主要网站的
 - **GitHub Releases**：[v1.0.0 下载](https://github.com/jesse2023wang-ai/NetSignal/releases/tag/v1.0.0)（NetSignal-1.0.0.dmg）
 - 下载后打开 `.dmg`，将 NetSignal 拖入 Applications 文件夹即可
 
+## ⚠️ 首次运行设置
+
+macOS 默认只允许运行已签名的应用。NetSignal 作为开源软件，首次运行前需要开启「任何来源」：
+
+### 1. 打开终端，执行以下命令
+
+```bash
+sudo spctl --master-disable
+```
+
+输入开机密码后生效。
+
+### 2. 确认设置
+
+打开 **系统设置 → 隐私与安全性**，在「安全性」区域应显示：
+
+```
+允许从以下位置下载的应用程序：
+  ● App Store
+  ○ App Store 和被认可的开发者
+  ○ 任何来源  ← 已选中
+```
+
+### 3. 首次运行
+
+- 打开 Applications 文件夹，**右键** NetSignal → **打开**
+- 弹出确认框时点「打开」
+
+> 如果仍然提示"无法打开"或"已损坏"，可以执行以下命令解除隔离属性：
+> ```bash
+> sudo xattr -rd com.apple.quarantine /Applications/NetSignal.app
+> ```
+
+### 关闭「任何来源」（可选）
+
+安装完成后如需恢复 macOS 默认安全设置：
+
+```bash
+sudo spctl --master-enable
+```
+
+执行后「任何来源」选项将隐藏，但不影响已安装的 NetSignal 正常运行。
+
 ## 测速标准
 
 | 响应时间 | 状态 | 颜色 |
